@@ -101,6 +101,7 @@ FEE_RECIPIENT=$(jq -r '.validators[0].feeRecipient // "0x00000000000000000000000
 ```
 2
 ```
+cat > /root/aztec/keys/keystore.json <<EOF
 {
   "schemaVersion": 1,
   "validators": [
@@ -109,7 +110,7 @@ FEE_RECIPIENT=$(jq -r '.validators[0].feeRecipient // "0x00000000000000000000000
         "eth": "$ETH_KEY",
         "bls": "$BLS_KEY"
       },
-      "coinbase": "CHANGE_YOUR_ADDRESS",
+      "coinbase": "<YOUR_COINBASE_ADDRESS>",
       "feeRecipient": "$FEE_RECIPIENT"
     }
   ]
