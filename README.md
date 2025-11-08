@@ -57,7 +57,11 @@ make sure you have 0.5-1 ETH Sepolia
 aztec generate-bls-keypair --mnemonic "CHANGE_TO_YOUR_MNEMONIC_YOUR_WALLET_HERE" --json
 ```
 don't forget to save your Keystore + BLS 
-### 3. Register your Validator to Aztec Network
+### 3. Approve Aztec rollup spend 200k STK
+```
+cast send 0x139d2a7a0881e16332d7D1F8DB383A4507E1Ea7A "approve(address,uint256)" 0xebd99ff0ff6677205509ae73f93d0ca52ac85d67 200000ether --private-key "CHANGE_PRIVATE_KEY_OLD_SEQUENCER" --rpc-url $ETH_RPC
+```
+### 4. Register your Validator to Aztec Network
 ```
 aztec \
   add-l1-validator \
