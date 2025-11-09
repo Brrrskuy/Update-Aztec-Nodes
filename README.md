@@ -164,7 +164,11 @@ AZTEC_PORT=8080
 LOG_LEVEL=info
 ```
 if done back to screen `CTRL+S+X` 
-### 3. Create docker-compose.yaml
+### 3. Create docker-compose.yml
+```
+nano docker-compose.yml
+```
+### 4. Add this configuration not change anything
 ```
 services:
   aztec-node:
@@ -192,11 +196,11 @@ services:
       - /root/aztec/data:/var/lib/data
       - /root/aztec/keys:/var/lib/keystore
 ```
-### 4. Start your nodes
+### 5. Start your nodes
 ```
 docker compose up -d
 ```
-### 5. check your logs
+### 6. check your logs
 ```
 docker compose logs -fn 100
 ```
