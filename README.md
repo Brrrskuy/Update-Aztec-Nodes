@@ -142,10 +142,6 @@ cat /root/aztec/keys/keystore.json | jq .
   ]
 }
 ```
-### 3. Delete your old datas
-```
-rm -rf .aztec
-```
 -------------------------------------
 ## Step 4 (Running Nodes docker)
 ### 1. Create .env file
